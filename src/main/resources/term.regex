@@ -1,0 +1,7 @@
+#List regular expressions to find the target term
+nyha
+New\\s*York(Heart\\*)?(Association)?
+functional
+C?HF
+(con\\w+\\s*)?heart\\s*failure
+

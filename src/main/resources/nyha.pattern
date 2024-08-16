@@ -1,0 +1,57 @@
+#List regular expressions to find the target term
+#NYHA 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha class 1
+#nyha class:1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*:\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#[NYHA classification for chf] is class I
+<gov.va.vinci.leo.nyha.types.Term/>\s*(is|of)\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#NYHA class (word) 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*\w{1,3}\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#NYHA (word) class 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*\w{1,3}\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<gov.va.vinci.leo.nyha.types.Term/>\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha: class III
+<gov.va.vinci.leo.nyha.types.Term/>\s*.?\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha classification class:1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha classification: class1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*.?\s*<gov.va.vinci.leo.nyha.types.Middle/>.<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha class (words):1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*\(\w*\s*\w*\s*\w*\s*\).?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha (words): 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*\(\w*\s*\w*\s*\w*\s*\).?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#NYHA class on discharge: 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*\w{1,4}\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<gov.va.vinci.leo.nyha.types.Term/>\s*\w*\s*\w*\s*.?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha (I, II, III, III): 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*\(I,\s*II,\s*III,\s*IV\).?\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#nyha: [x] class 1
+<gov.va.vinci.leo.nyha.types.Term/>:?\s*\[\s*x\s*\]\s*<gov.va.vinci.leo.nyha.types.Middle/>.<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<gov.va.vinci.leo.nyha.types.Term/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\s*<gov.va.vinci.leo.nyha.types.Term/>
+#class 1 nyha
+#class 1-nyha
+#class-1 nyha
+<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\s*<gov.va.vinci.leo.nyha.types.Term/>
+<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>.<gov.va.vinci.leo.nyha.types.Term/>
+<gov.va.vinci.leo.nyha.types.Middle/>.<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\\s*<gov.va.vinci.leo.nyha.types.Term/>
+#nyha screening: class 1
+<gov.va.vinci.leo.nyha.types.Term/>\s*\w+:\s*<gov.va.vinci.leo.nyha.types.Middle/>.<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#CHF specific patterns
+#class 1 CHF
+#class 1-CHF
+#class-1 CHF
+#CHF-class 1
+<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\s*<gov.va.vinci.leo.nyha.types.CHF_Term/>
+<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>.<gov.va.vinci.leo.nyha.types.CHF_Term/>
+<gov.va.vinci.leo.nyha.types.Middle/>.<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\s*<gov.va.vinci.leo.nyha.types.CHF_Term/>
+<gov.va.vinci.leo.nyha.types.Middle/>\s*,\s*<gov.va.vinci.leo.nyha.types.CHF_Term/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+<gov.va.vinci.leo.nyha.types.CHF_Term/>(\s*,\s*|\s*|-)<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#chf (stage IV)
+<gov.va.vinci.leo.nyha.types.CHF_Term/>\s*\(\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>\)
+#Template
+<gov.va.vinci.leo.nyha.types.NYHA_Template_score/>\s*<gov.va.vinci.leo.nyha.types.Middle/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>
+#___X___I
+<gov.va.vinci.leo.nyha.types.NYHA_Template_score/>\s*<!anchor><gov.va.vinci.leo.nyha.types.NYHA_score/><!anchor/>

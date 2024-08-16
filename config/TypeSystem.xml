@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+        
+    <name>leoTypeDescription_e3c5b548-61f9-4d23-b3f5-b581e1678275</name>
+        
+    <types>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.sentence.types.AnchoredSentence</name>
+                        
+            <description>Sentence Type</description>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>Anchor</name>
+                                        
+                    <description>Anchor Annotation around which the sentence was created</description>
+                                        
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.annotationpattern.types.AnnotationPatternType</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>anchor</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>anchorPattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>pattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>target</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>targetPattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.regex.types.RegularExpressionType</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>pattern</name>
+                                        
+                    <description>The regular expression pattern than matched. </description>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>concept</name>
+                                        
+                    <description>A user settable concept label.</description>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>group</name>
+                                        
+                    <description>The group array of values from a regex that contains group identifiers.</description>
+                                        
+                    <rangeTypeName>uima.cas.StringArray</rangeTypeName>
+                                        
+                    <elementType>uima.cas.String</elementType>
+                                        
+                    <multipleReferencesAllowed>false</multipleReferencesAllowed>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.Term</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.CHF_Term</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.NYHA_Template_score</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.Middle</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.NYHA_score</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.Exclude</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.regex.types.RegularExpressionType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.TermPattern</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.annotationpattern.types.AnnotationPatternType</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.TermContext</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>Experiencer</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>ExperiencerPattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>Negation</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>NegationPattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>Temporality</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>TemporalityPattern</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                                
+                <featureDescription>
+                                        
+                    <name>Window</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.window.types.Window</name>
+                        
+            <description>Window Type</description>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>Anchor</name>
+                                        
+                    <description>Anchor annotation around which the window was created</description>
+                                        
+                    <rangeTypeName>uima.tcas.Annotation</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.TermWindow</name>
+                        
+            <description/>
+                        
+            <supertypeName>gov.va.vinci.leo.window.types.Window</supertypeName>
+                    
+        </typeDescription>
+                
+        <typeDescription>
+                        
+            <name>gov.va.vinci.leo.nyha.types.Logic</name>
+                        
+            <description/>
+                        
+            <supertypeName>uima.tcas.Annotation</supertypeName>
+                        
+            <features>
+                                
+                <featureDescription>
+                                        
+                    <name>NYHA_Value</name>
+                                        
+                    <description/>
+                                        
+                    <rangeTypeName>uima.cas.String</rangeTypeName>
+                                    
+                </featureDescription>
+                            
+            </features>
+                    
+        </typeDescription>
+            
+    </types>
+    
+</typeSystemDescription>
