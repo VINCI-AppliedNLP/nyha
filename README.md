@@ -26,11 +26,10 @@ Here is a brief overview of the pipeline logic:
 **NyhaLogicAnnotator:** Implements custom logic to annotate the processed text based on the identified patterns and scores.
 NyhaLogicAnnotator Summary
 
-The NyhaLogicAnnotator class in the gov.va.vinci.leo.nyha.ae package processes annotations of type TermPattern and assigns a NYHA value:
+The NyhaLogicAnnotator class in the gov.va.vinci.leo.nyha.ae package processes annotations of type TermPattern and assigns a NYHA value.
 
-**Initialization:** The initialize method sets up the annotator.
 
-**Annotation:** The annotate method iterates through TermPattern annotations.
+
 
 For each pattern, it creates a Logic annotation.
 It extracts the NYHA value from the pattern's anchor if it is of type NYHA_score.
