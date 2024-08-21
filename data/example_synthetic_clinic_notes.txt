@@ -1,0 +1,29 @@
+Patient Note 1:
+NYHA Classification: Class II
+Condition: CHF (Congestive Heart Failure)
+Details: The patient reports slight limitation of physical activity. While resting, they feel fine, but routine activities cause fatigue, palpitations, and shortness of breath.
+
+Patient Note 2:
+NYHA Score: III
+Diagnosis: CHF
+Summary: Significant restriction of physical activity is noted. The patient is comfortable at rest, but less strenuous activities than usual lead to noticeable fatigue, palpitations, and dyspnea.
+
+Patient Note 3:
+NYHA: I
+Diagnosis: Heart Failure
+Observation: No restriction in physical activity. Normal activities do not cause undue fatigue, palpitations, or shortness of breath.
+
+Patient Note 4:
+NYHA Category: IV
+Condition: Heart Failure
+Notes: The patient cannot undertake any physical activity without discomfort. Symptoms of heart failure are present even at rest, and any physical effort exacerbates the discomfort.
+
+Patient Note 5:
+NYHA Level: II
+Diagnosis: CHF
+Information: The patient experiences a mild limitation in physical activity. They feel comfortable when resting, but regular activities result in fatigue, palpitations, or shortness of breath.
+
+Patient Note 6:
+NYHA Status: III
+Diagnosis: CHF
+Clinical Summary: The patient has marked limitation of physical activity. They are comfortable at rest, but activities less rigorous than usual cause fatigue, palpitations, and dyspnea.
